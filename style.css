@@ -1,0 +1,416 @@
+/*header*/
+
+.header-info {
+    background-color: darkblue;
+}
+
+.navbar {
+    background-color: #f4f4f4;
+}
+
+.navbar-titles {
+    width: 500px;
+    text-align: center;
+}
+
+.nav-titles {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 30px;
+    padding: 0;
+}
+
+.nav-item:hover {
+    color: #000;
+}
+
+@media(max-width: 1110px) {
+    .header-info {
+        display: none;
+    }
+    .navbar-titles {
+        width: auto;
+    }
+}
+
+@media(max-width: 765px) {
+    .nav-item {
+        margin-left: 30px;
+    }
+}
+
+
+/*start banner*/
+
+.banners {
+    background-color: red;
+}
+
+.carousel-item {
+    height: calc(100vh - 115px);
+}
+
+.banner1,
+.banner2,
+.banner3 {
+    background-image: url('./assets/img/banner/banner4.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.banner2 {
+    background-image: url('./assets/img/banner/banner5.jpg');
+}
+
+.banner3 {
+    background-image: url('./assets/img/banner/banner6.jpg');
+}
+
+.banner-titles {
+    color: #1fc4b9;
+}
+
+.banner-subtitle {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-left: 3px solid red;
+}
+
+.btn-colors {
+    background-color: darkblue;
+    color: #fff;
+}
+
+@media(max-width: 1110px) {
+    .carousel-item {
+        height: calc(100vh - 55px);
+    }
+}
+
+
+/*end banner*/
+
+
+/*header*/
+
+
+/*start features*/
+
+.fea-infos {
+    box-shadow: 3px 3px 10px #999;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.fea-infos:hover {
+    transform: translateY(-10px);
+}
+
+.fea-icons {
+    width: 80px;
+    height: 80px;
+    background-color: #1fc4b9;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fea-icons:hover {
+    background-color: #fff;
+    border: 2px solid #1fc4b9;
+    color: #1fc4b9;
+}
+
+
+/*end features*/
+
+
+/*start about us*/
+
+.aboutus-col1,
+.aboutus-col2 {
+    height: 350px;
+    /*background-color: red;*/
+    position: relative;
+    overflow: hidden;
+}
+
+.aboutus-content,
+.aboutus-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutus-content {
+    padding: 20px;
+}
+
+.aboutus-img img {
+    width: 250px;
+}
+
+.from-left {
+    animation-name: myleft;
+    animation-duration: 3s;
+}
+
+.from-right {
+    animation-name: myright;
+    animation-duration: 3s;
+}
+
+@keyframes myleft {
+    from {
+        transform: translate(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes myright {
+    0% {
+        transform: translate(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+
+/*end about us*/
+
+
+/*start adv*/
+
+.advertising {
+    background-image: url('./assets/img/banner/banner3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.adv-title {
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.btn-adv {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+}
+
+.btn-adv:hover {
+    color: #fff;
+}
+
+.adv-vd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*end adv*/
+
+
+/*start department*/
+
+.de-card {
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #777;
+    overflow: hidden;
+    position: relative;
+}
+
+.de-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.de-contents {
+    width: 80%;
+    height: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 83%;
+    left: 10%;
+    right: 10%;
+    transition: all 0.5s;
+}
+
+.de-subtitle {
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+.de-card:hover .de-contents {
+    width: 100%;
+    top: 50%;
+    left: 0;
+    right: 0;
+}
+
+
+/*end department*/
+
+
+/*start pricing*/
+
+.prcing-cards {
+    width: 100%;
+    transition: all .5s;
+}
+
+.card-headers,
+.card-footers {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.prcing-cards:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 10px #999;
+}
+
+.prcing-cards:hover .card-headers {
+    background-color: skyblue;
+    color: #fff;
+}
+
+.prcing-btns {
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: skyblue;
+    outline: none;
+}
+
+.prcing-btns:hover {
+    border: none;
+    background-color: skyblue;
+    color: #fff;
+}
+
+.dollors {
+    color: darkviolet;
+    font-weight: bold;
+}
+
+
+/*end pricing*/
+
+
+/* start join us */
+
+.joinus-form {
+    border: 1px solid #eee;
+    border-radius: 20px;
+}
+
+
+/* end join us */
+
+
+/* start footer  */
+
+.footer-icons {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.footerlinks {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 3px;
+    margin-bottom: 3px;
+    transition: all 0.3s;
+}
+
+.footerlinks:hover {
+    letter-spacing: 1px;
+    color: orange;
+    border-bottom: 1px solid orange;
+}
+
+.copyright {
+    border-top: 3px solid #fff;
+    padding: 20px;
+}
+
+
+/* end footer  */
+
+.progress {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    position: absolute;
+    z-index: 3;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arr-up {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: cyan;
+    color: blueviolet;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    scroll-behavior: smooth;
+}
+
+.arr-up:hover {
+    color: blueviolet;
+}
